@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Basics - Portfolio</title>
+
+    <!-- styles -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        .container {
+            background-color: #000000;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .container .inner {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .container h1,
+        .container p {
+            color: #ffffff;
+        }
+
+        .container h1 {
+            /* font-size: 3rem; */
+            letter-spacing: 1.2px;
+        }
+
+        .container p {
+            letter-spacing: 1px;
+            /* font-size: 1.3rem; */
+            line-height: 25px;
+        }
+
+        .container p span a {
+            font-size: .9rem;
+            text-decoration-line: none;
+            transition: .5s ease;
+            color: darksalmon;
+        }
+
+        .container p span a:visited {
+            color: coral;
+        }
+
+        .container p span a:hover {
+            color: chartreuse;
+        }
+
+
+        /* this takes care of responsive changes on a desktop screen size */
+        @media(min-width: 750px) {
+
+
+            body {
+                font-size: 16px;
+            }
+
+            .container h1 {
+                font-size: 3rem;
+            }
+
+            .container p {
+                font-size: 1.3rem;
+            }
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="inner">
+            <h1>My name is Ibrahim Alli</h1>
+            <p>I am a web developer. I create amazing client experience. I code for hours if there is a lot of problems
+                to be
+                solved.<br />
+                I'm my spare time, i write songs and jokes. Designing website with Wordpress pays my bills as a
+                freelancer.
+                <br />
+                <br />
+                <span><a href="https://web.facebook.com/iballi2017" target="_blank">Facebook</a></span>
+                &nbsp;|&nbsp;
+                <span><a href="https://twitter.com/ib_mybigmouth">Twitter</a></span>
+                &nbsp;|&nbsp;
+                <span><a href="https://github.com/iballi2017" target="_blank">Github</a></span>
+                &nbsp;|&nbsp;
+                <span><a href="https://www.linkedin.com/in/ibrahim-alli-6bb347b3/">Linkedin</a></span>
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
