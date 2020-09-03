@@ -11,3 +11,14 @@ a{text-decoration-line:none}
 .course-list a{color: darksalmon;;transition:.6s ease}
 .course-list a:visited{color:coral}
 .course-list a:hover{color:#7fff00}
+.back-btn{
+    border: none;
+    background-color: unset;
+    color:darksalmon; 
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.back-btn:focus{
+    outline: 0;
+}

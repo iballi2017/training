@@ -17,6 +17,18 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 14px;
+        }        
+
+        a {
+            text-decoration-line: none;
+            transition: .5s ease;
+            color: darksalmon;
+        }
+        a:visited {
+            color: coral;
+        }
+        a:hover {
+            color: chartreuse;
         }
 
         .container {
@@ -47,21 +59,9 @@
             line-height: 25px;
         }
 
-        .container p span a {
+        .container p span a{
             font-size: .9rem;
-            text-decoration-line: none;
-            transition: .5s ease;
-            color: darksalmon;
         }
-
-        .container p span a:visited {
-            color: coral;
-        }
-
-        .container p span a:hover {
-            color: chartreuse;
-        }
-
 
         /* this takes care of responsive changes on a desktop screen size */
         @media(min-width: 750px) {
@@ -87,7 +87,7 @@
     <div class="container">
         <div class="inner">
             <h1>My name is Ibrahim Alli</h1>
-            <p>I am a web developer. I create amazing client experience. I code for hours if there is a lot of problems
+            <p>I am a <a href="http://ibrahimalli.com/" target="_blank">web developer</a>. I create amazing client experience. I code for hours if there is a lot of problems
                 to be
                 solved.<br />
                 In my spare time, i write songs and jokes. Designing website with Wordpress pays my bills more as a
